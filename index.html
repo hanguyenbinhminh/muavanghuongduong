@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mùa vàng trên đồng hướng dương</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#16200e;--ink:#f4f0e0;--muted:#b7bfa3;--sun:#f2b705;--line:#33421f;
+--serif:"Lora",Georgia,serif;--sans:"Be Vietnam Pro",system-ui,sans-serif;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 1.0625rem/1.75 var(--sans)}
+img{display:block;width:100%;max-width:100%;height:100%;object-fit:cover}
+figure{margin:0}
+figcaption{font-size:.875rem;line-height:1.6;color:var(--muted);padding-top:.7rem;max-width:62ch}
+figcaption b{font-weight:500;color:var(--ink)}
+.hero{position:relative;height:100svh;min-height:520px;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,16,6,.15) 30%,rgba(10,16,6,.85))}
+.hero h1{position:absolute;z-index:1;left:clamp(1.25rem,6vw,5rem);right:1.25rem;bottom:clamp(2rem,8vh,5rem);margin:0;
+font:700 clamp(2.6rem,9vw,7rem)/1.02 var(--serif);letter-spacing:-.02em;max-width:12ch}
+.hero p{position:absolute;z-index:1;left:clamp(1.25rem,6vw,5rem);bottom:clamp(.9rem,3vh,2rem);margin:0;font-size:.875rem;color:var(--muted)}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+.intro{padding:clamp(3rem,10vw,7rem) 0}
+.intro p{max-width:40rem;margin:0 0 1.2rem}
+.intro .lead{font:400 clamp(1.4rem,3.4vw,2.1rem)/1.45 var(--serif);color:var(--ink);max-width:34ch}
+.chap{padding:clamp(3rem,9vw,6rem) 0 1.5rem}
+.chap h2{font:700 clamp(1.7rem,4.5vw,2.8rem)/1.15 var(--serif);margin:0 0 .8rem;color:var(--sun)}
+.chap p{margin:0;max-width:40rem;color:var(--muted)}
+.bleed{margin:0}
+.bleed .ph{aspect-ratio:16/8}
+.bleed figcaption{padding:.7rem 1.25rem 0;margin:0 auto;max-width:68rem}
+.ph{overflow:hidden;background:#0e1608;cursor:zoom-in}
+.ph img{transition:transform .6s}
+.ph:hover img{transform:scale(1.03)}
+.pair{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;margin-top:1rem}
+.pair .a{grid-column:span 8}.pair .b{grid-column:span 4}
+.pair .a .ph{aspect-ratio:3/2}.pair .b .ph{aspect-ratio:2/3}
+.pair.flip .a{grid-column:span 5;order:2}.pair.flip .b{grid-column:span 7;order:1}
+.pair.flip .a .ph{aspect-ratio:2/3}.pair.flip .b .ph{aspect-ratio:3/2}
+.quote{padding:clamp(3rem,10vw,7rem) 1.25rem;text-align:center}
+.quote p{margin:0 auto;max-width:24ch;font:italic 400 clamp(1.6rem,4.5vw,3rem)/1.35 var(--serif)}
+.end{position:relative}
+.end .ph{aspect-ratio:16/9;min-height:60svh}
+.end::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,16,6,.85),transparent 60%);pointer-events:none}
+.end div.t{position:absolute;z-index:1;left:clamp(1.25rem,6vw,5rem);right:1.25rem;bottom:clamp(1.5rem,6vh,4rem);font:500 clamp(1.4rem,3.6vw,2.3rem)/1.35 var(--serif);max-width:26ch}
+footer{padding:2rem 1.25rem 3rem;text-align:center;font-size:.8125rem;color:var(--muted)}
+#lb{position:fixed;inset:0;z-index:9;background:rgba(8,12,5,.95);display:none;align-items:center;justify-content:center;padding:1rem;cursor:zoom-out}
+#lb.on{display:flex}#lb img{width:auto;height:auto;max-height:92vh;object-fit:contain}
+a:focus-visible,.ph:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+@media(max-width:640px){
+.bleed .ph{aspect-ratio:4/3}
+.pair,.pair.flip{grid-template-columns:1fr}
+.pair .a,.pair .b,.pair.flip .a,.pair.flip .b{grid-column:auto;order:0}
+.pair .a .ph,.pair .b .ph,.pair.flip .a .ph,.pair.flip .b .ph{aspect-ratio:3/2}}
+@media(prefers-reduced-motion:reduce){.ph img{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+<img src="images/toan-canh.webp" alt="Toàn cảnh cánh đồng hướng dương nhìn từ trên cao, những luống hoa chạy dài đến chân núi">
+<h1>Mùa vàng trên đồng hướng dương</h1>
+<p>Ảnh: Tư liệu</p>
+</header>
+
+<main>
+<section class="wrap intro">
+<p class="lead">Có những buổi sáng, cả một vùng quê bỗng đổi màu: xanh của lá, vàng của hoa, và xa xa là dãy núi mờ trong sương.</p>
+<p>Đến mùa hướng dương nở, người ta kéo nhau ra đồng từ rất sớm. Có người đến để ngắm, có người đến để chụp một tấm ảnh thật đẹp, có người chỉ đơn giản muốn đứng giữa màu vàng ấy một lúc cho lòng nhẹ đi.</p>
+<p>Loạt ảnh dưới đây đi từ xa đến gần: từ cánh đồng nhìn từ trên cao, đến từng bông hoa, rồi đến những con người đứng giữa hoa.</p>
+</section>
+
+<figure class="bleed">
+<div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/canh-dong.webp" alt="Cánh đồng hướng dương trải rộng dưới bầu trời nhiều mây, núi xa phía chân trời" loading="lazy"></div>
+<figcaption><b>Biển hoa dưới trời nhiều mây.</b> Hàng nghìn bông hướng dương cùng ngả về một phía, nơi ánh sáng dịu nhất của buổi sáng.</figcaption>
+</figure>
+
+<section class="wrap chap">
+<h2>Từ trên cao</h2>
+<p>Nhìn từ độ cao hàng trăm mét, cánh đồng hiện ra như tấm thảm khổng lồ, những đường đất đỏ chia lô như nét bút kẻ giữa nền vàng.</p>
+</section>
+
+<figure class="bleed">
+<div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/tren-cao.webp" alt="Hai khinh khí cầu bay thấp trên cánh đồng hướng dương lúc chiều muộn" loading="lazy"></div>
+<figcaption><b>Khinh khí cầu trên đồng.</b> Hai quả cầu lơ lửng giữa trời chiều, bên dưới là những luống hoa thẳng tắp và đường đất đỏ chạy giữa đồng.</figcaption>
+</figure>
+
+<div class="wrap">
+<figure>
+<div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/khinh-khi-cau.webp" alt="Ba khoảnh khắc trên khinh khí cầu: ngọn lửa đốt, mặt trời lặn, và hai du khách mỉm cười" loading="lazy" style="aspect-ratio:3/2"></div>
+<figcaption><b>Một chuyến bay trong ba khung hình.</b> Ngọn lửa làm phồng khí cầu, mặt trời đỏ chạm đường chân trời, và nụ cười của những người lần đầu nhìn cánh đồng từ trên cao.</figcaption>
+</figure>
+</div>
+
+<div class="quote"><p>Càng đến gần, màu vàng càng có hình hài.</p></div>
+
+<div class="wrap">
+<div class="pair flip">
+<figure class="a"><div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/hoang-hon.webp" alt="Những bông hướng dương quay mặt về phía mặt trời đang lặn" loading="lazy"></div>
+<figcaption><b>Hướng về phía mặt trời.</b> Khi hoàng hôn xuống, cánh đồng chuyển từ vàng sang cam rồi tím nhạt.</figcaption></figure>
+<figure class="b"><div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/can-canh.webp" alt="Cận cảnh những bông hướng dương dưới nắng, nền xa mờ" loading="lazy"></div>
+<figcaption><b>Cận cảnh.</b> Nhụy hoa xếp xoắn ốc, cánh hoa vàng rực dưới nắng sớm.</figcaption></figure>
+</div>
+</div>
+
+<section class="wrap chap">
+<h2>Con người giữa sắc vàng</h2>
+<p>Hoa đẹp hơn khi có người đứng cạnh. Nụ cười, cái giơ tay, ánh mắt ngước lên bông hoa lớn hơn cả khuôn mặt.</p>
+</section>
+
+<div class="wrap">
+<div class="pair">
+<figure class="a"><div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/nhom-ban.webp" alt="Sáu người phụ nữ giơ tay vẫy giữa cánh đồng hướng dương" loading="lazy"></div>
+<figcaption><b>Sáu người bạn, một dáng tay.</b> Cả nhóm cùng giơ cao hai tay giữa hoa, như muốn ôm trọn cánh đồng.</figcaption></figure>
+<figure class="b"><div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/ngam-hoa.webp" alt="Người phụ nữ áo hồng ngước nhìn một bông hướng dương khổng lồ" loading="lazy" style="object-position:50% 40%"></div>
+<figcaption><b>Ngước nhìn.</b> Bông hoa to bằng cả khuôn mặt, và người đứng cạnh không giấu được niềm vui.</figcaption></figure>
+</div>
+</div>
+
+<div class="quote"><p>Cánh đồng rồi sẽ tàn, nhưng những tấm ảnh thì ở lại.</p></div>
+
+<figure class="end">
+<div class="ph" tabindex="0" role="button" aria-label="Phóng to ảnh"><img src="images/hoang-hon.webp" alt="Mặt trời lặn phía sau cánh đồng hướng dương" loading="lazy"></div>
+<div class="t">Hẹn bạn vào mùa hoa sau, từ lúc bình minh đến khi hoàng hôn.</div>
+</figure>
+</main>
+
+<footer>Ảnh: Tư liệu. Nhấn vào ảnh để xem phóng to.</footer>
+<div id="lb" role="dialog" aria-label="Xem ảnh"><img alt=""></div>
+<script>
+(function(){
+var lb=document.getElementById('lb'),im=lb.querySelector('img');
+function open(el){var s=el.querySelector('img');im.src=s.src;im.alt=s.alt;lb.classList.add('on')}
+document.querySelectorAll('.ph').forEach(function(p){
+p.addEventListener('click',function(){open(p)});
+p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(p)}})});
+lb.addEventListener('click',function(){lb.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script>
+</body>
+</html>
